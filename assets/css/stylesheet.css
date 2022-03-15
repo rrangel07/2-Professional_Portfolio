@@ -1,0 +1,65 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    line-height: 1.5;
+    background-image: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    font-size: 1.75rem;
+}
+
+main{
+    width: 96%;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    font-size: 1.75rem;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: red;
+    margin: 15px 25px;
+}
+section img{
+    width: 75%;
+    border: 5px solid black;
+}
+
+
+.section {
+
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    border-right: 5px solid black;
+}
+
+/* #work-im{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    justify-content: space-between;
+} */
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    
+}
