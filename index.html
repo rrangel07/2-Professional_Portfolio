@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <div class="hero"></div>
         <nav>
             <ul class="navbar">
                 <li><a href="#About-me">About me</a></li>
@@ -23,36 +24,51 @@
 
     <main>
         <!-- Bio -->
-        <section id="About-me" class="section">  
-            <h2> About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis tenetur nesciunt quasi iste vitae, cupiditate debitis incidunt expedita? Doloremque est officia optio architecto nostrum reiciendis quae ad blanditiis explicabo incidunt quibusdam nemo quidem, cupiditate tempore consequuntur voluptate quos fugit obcaecati rem? Impedit qui at deleniti aliquam magnam eius libero, voluptas perspiciatis temporibus minima, maiores, ex illo aspernatur ducimus illum expedita quisquam. Minima, veniam! Repellendus molestiae, quas sint veritatis error vel, exercitationem asperiores ad ea provident facilis magni obcaecati fuga eaque expedita quia qui. Eveniet minima quibusdam dolores fuga autem quas quae, a doloribus quidem ex ipsam neque deserunt porro. </p>
+        <section id="About-me" class="container">
+            
+            <h2 class="flex-h2"> About me</h2>
+            <p>Hi! My name is Raul, I was born and raised in Venezuela. I studied to become a Mechanical Engineer and now I'm prepparing myself to be a Full-stack Web Developer attending to GT's bootcamp.</p>
         </section>
 
-        <section id="Work" class="section">
-            <h2>Work</h2>
+        <section id="Work" class="container-reverse">
+            <h2 class="flex-h2-reverse">Work</h2>
             <section id="work-im">
-                <img src="./assets/images/download.jpg" alt="Project 1 Fun">
-                <img src="./assets/images/download.jpg" alt="Project 1 Fun">
-                <img src="./assets/images/download.jpg" alt="Project 1 Fun">
-                <img src="./assets/images/download.jpg" alt="Project 1 Fun">
+                <fig>
+                    <img src="./assets/images/01-html-css-git-homework-demo.png" alt="Project 1 Fun" class="work-img">
+                    <figcaption class="center-fig-tittle"> Horiseon Refactor</figcaption>
+                </fig>
+                <figure>  
+                     <img src="./assets/images/download.jpg" alt="Project 1 Fun" class="work-img">
+                     <figcaption class="center-fig-tittle"> Horiseon Refactor</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/download.jpg" alt="Project 1 Fun" class="work-img">
+                    <figcaption class="center-fig-tittle"> Horiseon Refactor</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/download.jpg" alt="Project 1 Fun" class="work-img">
+                    <figcaption class="center-fig-tittle"> Horiseon Refactor</figcaption>
+                </figure>
             </section>
         </section>
 
-        <section id="Resume">
-            <h2>Resume</h2>
+        <section id="Resume" class="container">
+            
             <section>
-                <p>You can download my resume from this link</p>
-                <a href="./assets/docs/Raul_RangelAravena_Resume.pdf" target="_blank"><img src="./assets/images/istockphoto-1298834280-612x612.jpg" alt="Project 1 Fun"></a>
+                <p>Click to download</p>
+                <a href="./assets/docs/Raul_RangelAravena_Resume.pdf" target="_blank"><img src="./assets/images/istockphoto-1298834280-612x612.jpg" alt="Project 1 Fun" width="100"></a>
+                <h2 class="flex-h2">Resume</h2>
             </section>
         </section>
 
-        <section id="Contact-me">
-            <h2>Contac me</h2>
+        <section id="Contact-me" class="container-reverse">
+            <h2 class="flex-h2-reverse">Contact me</h2>
             <section>
                 <p>You can reach me through my social media, by phone or email</p>
-                <ul>
+                <ul class="contact-container">
                        <li><a href="https://twitter.com/rrangel07?ref_src=twsrc%5Etfw" target="_blank"><img src="assets/images/2021 Twitter logo - blue.png" alt="twitter logo" width="50" height="50"></a></li>
                        <li><a href="https://www.linkedin.com/in/rrangel07" target="_blank"><img src="./assets/images/LI-In-Bug.png" alt="LinkedIn Logo" width="50" height="auto"></a></li>
+                       <li><a href="https://www.linkedin.com/in/rrangel07" target="_blank"><img src="./assets/images/GitHub-Mark-120px-plus.png" alt="LinkedIn Logo" width="50" height="auto"></a></li>
                    </ul>
             </section>
         </section>
