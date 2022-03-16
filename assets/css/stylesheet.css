@@ -1,11 +1,22 @@
+:root{
+    --color6: #ddb892;
+    --color7: #b08968;
+    --color8: #473B36;
+    --color9: #786F6C;
+    --color10: #A0B1CB;
+    --color11: #C0ADA1;
+    --color12: #B48072;
+}
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
     line-height: 1.5;
-    background-image: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    background-image: linear-gradient(270deg,var(--color6) 50%, var(--color7) 96%);
     font-size: 1.75rem;
     margin: 0 auto;
 }
@@ -15,18 +26,44 @@ main{
     margin: inherit;
 }
 
+h1{
+    font-size: 4.5rem;
+    background-color: rgba(71, 59, 54, 0.5);
+}
+
+h3{
+    font-size: 2.25rem;
+}
 p{
     margin-bottom: 20px;
+    padding: 10px;
 }
 nav{
     width: 100%;
-    background-color: black;
+    background-color: var(--color8);
     font-size: 2rem;
     line-height: 1.5;
-    padding: 10px 0
+    padding: 15px 0
 
 }
 
+footer{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.link,
+.social{
+    text-decoration: none;
+    color: white;
+    margin: 15px 25px;
+    padding: 5px;
+}
+
+.social{
+    color: black;
+    font-size: 2.75rem;
+}
 .hero {
     height: 450px;
     width: auto;
@@ -43,16 +80,20 @@ nav{
 
 .contact-container{
     display: flex;
+    flex-flow: row wrap;
+
 }
-li a{
-    text-decoration: none;
-    color: red;
-    margin: 15px 25px;
-}
+
 .work-img{
     max-width: 100%;
     height: auto;
-    border: 5px solid black;
+    border: 10px solid black;
+    margin: 30px;
+}
+
+.social-img{
+    max-width: 30%;
+    height: auto;
 }
 
 
@@ -60,27 +101,21 @@ li a{
     display: flex;
     flex-flow: row;
     margin: 1% auto;
-    border: 10px dotted blue;
+    border: 5px dotted black;
     align-items: center;
+    justify-content: space-between;
     height: auto;
-    position: relative;
     padding: 50px;
 }
 
 .container-reverse{
     display: flex;
     flex-flow: row-reverse;
-    margin: 0 auto;
-    border: 10px dotted blue;
+    margin: 1% auto;
+    border: 5px dotted black;
     align-items:flex-start;
     justify-content: space-between;
     height: auto;
-    position:relative;
-    padding: 50px;
-}
-
-.justify-center{
-    justify-content: center;
 }
 
 .center-fig-tittle{
@@ -93,24 +128,35 @@ li a{
     margin-right: 50px;
     padding-right: 25px;
     font-size: 2.5rem;
-    height: 100%;
+    line-height: 5;
 }
 
 .flex-h2-reverse{
     border-left: 5px solid black;
     margin-left: 50px;
-    padding-left: 25px;
+    padding: 0 25px;
     font-size: 2.5rem;
-    height: 100%;
+    line-height: 5;
 }
 
 #work-im{
     display: flex;
     flex-flow: row wrap;
     flex: 1 auto;
-    justify-content: space-around;            
+    justify-content: space-around;
+    align-items: flex-end;          
 }
 
+.link:hover{
+    background-color: var(--color10);
+    color: black;
+    font-weight: bolder;
+}
+
+.work-img:hover,
+.social-img:hover{
+    transform: scale(1.05);
+}
 @media screen and (min-width: 768px) {
     .navbar{
         flex-flow: row wrap;
@@ -118,9 +164,12 @@ li a{
         padding: 0 10%;
     }
     
-    .section {
-        flex: 1 0 75%;
-        align-items: center;
-        justify-content: center;
-    }
+
+.link,
+.social{
+    text-decoration: none;
+    color: white;
+    margin: 15px 25px;
+    padding: 20px 40px;
+}
 }
