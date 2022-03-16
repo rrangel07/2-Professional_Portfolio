@@ -15,3 +15,8 @@ The web page was design as a responsive one fitting mobile devices, nootebooks a
 
 ## Notebook View
 ![Notebook View](./assets/images/127.0.0.1_5500_index.html-desktop.png)
+
+## Links
+
+1. Repository Link: https://github.com/rrangel07/HW2-Portfolio
+2. Deployment Link: https://rrangel07.github.io/HW2-Portfolio/
