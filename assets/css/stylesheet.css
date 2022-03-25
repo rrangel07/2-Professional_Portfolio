@@ -116,6 +116,7 @@ footer{
     align-items:flex-start;
     justify-content: space-between;
     height: auto;
+    padding: 50px;
 }
 
 .center-fig-tittle{
@@ -146,17 +147,20 @@ footer{
     justify-content: space-around;
     align-items: flex-end;          
 }
-
+/* This selector changes the color of the navegation links when hover */
 .link:hover{
     background-color: var(--color10);
     color: black;
     font-weight: bolder;
 }
-
+/* This selector enlarges the portfolio images and the social media logos when hover */
 .work-img:hover,
 .social-img:hover{
     transform: scale(1.05);
 }
+
+/* Media queries */
+
 @media screen and (min-width: 768px) {
     .navbar{
         flex-flow: row wrap;
@@ -172,4 +176,23 @@ footer{
     margin: 15px 25px;
     padding: 20px 40px;
 }
+}
+
+@media screen and (max-width: 290px) {
+    .container,.container-reverse{
+        padding: 10px;
+    }
+    .flex-h2{
+        padding: 0 10px;
+        margin-right: 25px;
+    }
+    
+    .flex-h2-reverse{
+        padding: 0 10px;
+        margin-left: 25px;
+    }
+    .work-img{
+        border: 5px solid black;
+        margin: 10px;
+    }
 }
